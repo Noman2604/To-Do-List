@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">
+        <h1>TO  DO  LIST</h1>
+    </header>
+    <section>
+    <input class="inputbox" id="taskInput" type="text" placeholder="Add some task">
+
+    <div class="center">
+        <div class="outter button">
+            <button onclick="addTask()">ADD</button>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    </section>
+    <div class="orderlist">
+        <ol class="task" id="tasks">
+            <!-- add list hear -->
+        </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

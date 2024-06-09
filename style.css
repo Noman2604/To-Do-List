@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gochi Hand", cursive;
+}
+
+body{
+    background-color: #F8EA8C;
+}
+header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #fff;
+    background: transparent;
+    background-color: #06323e;
+}
+h1{
+    position: relative;
+    font-size: 6em;    
+    letter-spacing: 10px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px liner-grdient(transform,#0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #236c81;
+        text-shadow: none;
+    }
+
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%, 100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+                     0 0 20px #03bcf4, 
+                     0 0 40px #03bcf4,
+                     0 0 80px #03bcf4,
+                     0 0 160px #03bcf4;
+    }
+}
+.inputbox{
+    height: 60px;
+    width: 200px;
+    margin-top: 40px;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 10px;
+    border:3px solid  black;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    height: 70px;
+    width:700px;
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 3px solid black;
+    background-color: #c1c1c1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    align-items: center;
+    margin-left: -100px;
+}
+input[type="text"] {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.outter{
+    position: relative;
+    background: linear-gradient(#14ffe9,#ffeb3d,#ff00e0);
+
+}
+button{
+    height: 50px;
+    width: 85px;
+}
+.button{
+    height: 55px;
+    width: 85px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.button button{
+    height: 45px;
+    width: 80px;
+    border-radius:50px ;
+}
+.outter button, .outter span{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+.outter button{
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    z-index: 9;
+    position: relative;
+    background: #010101;
+    transition: 0.1s;
+    letter-spacing: 1px;
+}
+.outter span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+
+}
+ .button span{
+    border-radius: 50px;
+}
+
+.outter:hover span:nth-child(1){
+    filter: blur(10px);
+}
+.outter:hover span:nth-child(2){
+    filter: blur(20px);
+}
+.outter:hover{
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate
+{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.remove{
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 17px;
+    border: none;
+    width: 80px;
+    
+}
+button:active {
+    transition: 0.5s;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orderlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li[type="text"]{
+    font-size: 20px;
+    
+}
